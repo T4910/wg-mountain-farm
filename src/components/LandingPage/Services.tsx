@@ -26,14 +26,12 @@ export default function Services() {
             description="We create and maintain rich grazing lands that keep livestock healthy, improve soil quality, and protect the environment. Our approach blends tradition with modern techniques for lasting results."
             imageSrc="/cattle-herd.jpg"
             bg="bg-[#E6F4E6]"
-            border="border-[#2E7D3233]"
           />
           <ServiceCard
             title="Livestock Grazing & Breeding"
             description="From cattle to sheep and goats, we raise strong, well-bred animals through responsible grazing and selective breeding—ensuring premium quality across generations."
             imageSrc="/cattle-herd.jpg"
             bg="bg-[#FFF7E5]"
-            border="border-[#F5850B33]"
             reverse
           />
           <ServiceCard
@@ -41,7 +39,6 @@ export default function Services() {
             description="We process fresh, high‑quality beef, dairy, and leather with care—combining craft and consistency from pasture to marketplace."
             imageSrc="/cattle-herd.jpg"
             bg="bg-[#E9F5FA]"
-            border="border-[#2288A733]"
           />
         </div>
       </div>
@@ -54,7 +51,6 @@ type ServiceCardProps = {
   description: string;
   imageSrc: string;
   bg: string;
-  border: string;
   reverse?: boolean;
 };
 
@@ -63,7 +59,6 @@ function ServiceCard({
   description,
   imageSrc,
   bg,
-  border,
   reverse = false,
 }: ServiceCardProps) {
   return (

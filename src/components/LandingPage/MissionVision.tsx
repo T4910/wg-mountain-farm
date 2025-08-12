@@ -1,5 +1,4 @@
 import {
-  Globe2,
   Globe2Icon,
   HandshakeIcon,
   ShieldHalfIcon,

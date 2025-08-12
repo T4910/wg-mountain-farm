@@ -21,11 +21,11 @@ export default function Contact() {
         <div className="mb-12">
           <div className="title-header mb-2">Contact Us</div>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black leading-tighter mb-4">
-            Let's Work Together
+            Let{"'"}s Work Together
           </h2>
           <p className="text-gray-600 max-w-xl">
-            Have a question, partnership idea, or just want to say hello? We'd
-            love to hear from you.
+            Have a question, partnership idea, or just want to say hello? We
+            {"'"}d love to hear from you.
           </p>
         </div>
 
