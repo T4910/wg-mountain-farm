@@ -28,7 +28,7 @@ export default function MissionVision() {
         {/* Mission & Vision Cards */}
         <div className="grid grid-cols-1 gap-8">
           {/* Our Mission Card */}
-          <div className=" bg-[#E6F4E6] rounded-2xl p-10 shadow-sm border border-[#4E995033] h-56">
+          <div className=" bg-[#E6F4E6] rounded-2xl p-10 shadow-sm border border-[#4E995033] min-h-56">
             <div className="flex items-start space-x-6">
               <div className="w-1/2 flex flex-col self-center">
                 <div className="size-12 bg-[#4E9950] rounded-md flex items-center justify-center flex-shrink-0">
@@ -52,7 +52,7 @@ export default function MissionVision() {
           </div>
 
           {/* Our Vision Card */}
-          <div className=" bg-[#E9F5FA] rounded-2xl p-10 shadow-sm border flex items-center flex-col border-[#2288A733] h-56">
+          <div className=" bg-[#E9F5FA] rounded-2xl p-10 shadow-sm border flex justify-center items-center flex-col border-[#2288A733] min-h-56">
             <div className="flex items-start justify-center space-x-6">
               <div className="w-1/2 flex flex-col self-center">
                 <div className="size-12 bg-[#2288A7] rounded-md flex items-center justify-center flex-shrink-0">

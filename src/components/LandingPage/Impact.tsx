@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Impact() {
   return (
-    <section className="py-16 px-12 bg-secondary flex justify-between items-center gap-28">
+    <section className="py-16 px-12 bg-secondary flex max-md:flex-col justify-between items-center gap-28">
       {/* <div className=" mx-auto"> */}
       {/* Header */}
       <div className="mb-12">
@@ -17,7 +17,7 @@ export default function Impact() {
       </div>
 
       {/* Statistics Grid */}
-      <div className="grid grid-cols-2 gap-y-8 mx-auto min-w-xl">
+      <div className="grid grid-cols-2 gap-y-8 mx-auto lg:min-w-xl">
         {/* Stat 1 */}
         <div className="">
           <div className="text-4xl md:text-5xl font-semibold text-green-600 mb-4">
