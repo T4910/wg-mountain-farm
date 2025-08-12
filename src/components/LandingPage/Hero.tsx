@@ -65,13 +65,13 @@ export default function Hero() {
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-8 pt-6">
-            <Button size="lg" className="py-6 px-8 text-lg">
+            <Button size="lg" className="py-4 px-6">
               Partner With Us →
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-primary border-2 text-primary py-6 px-8 text-lg"
+              className="text-primary py-4 px-6"
             >
               Explore Services
             </Button>

@@ -9,7 +9,7 @@ import React from "react";
 
 export default function MissionVision() {
   return (
-    <section className="py-16 px-12 bg-secondary">
+    <section className="py-28 px-12 bg-secondary">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <span className="title-header">Mission, Vision & Values</span>
