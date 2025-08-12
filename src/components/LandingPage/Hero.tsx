@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-screen w-full">
+    <div className="relative min-h-[105vh] w-full">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -18,7 +18,7 @@ export default function Hero() {
         <div className="absolute inset-0 bg-black/20" />
 
         {/* Bottom fade effect */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-white via-white/20 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/20 to-transparent" />
       </div>
 
       {/* Navigation Header */}
