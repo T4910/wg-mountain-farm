@@ -123,6 +123,6 @@
 
 @layer components {
   .title-header {
-    @apply text-[#1c7ead] text-lg font-thin tracking-wider uppercase;
+    @apply text-[#1c7ead] text-base font-thin tracking-wider uppercase;
   }
 }

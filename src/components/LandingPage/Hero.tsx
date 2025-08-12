@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="relative min-h-[105vh] w-full">
+    <section className="relative min-h-[105vh] w-full">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -78,6 +78,6 @@ export default function Hero() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
