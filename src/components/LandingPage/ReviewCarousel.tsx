@@ -205,9 +205,9 @@ export default function ReviewsCarousel() {
             <Progress
               value={progressValue}
               className="h-2 bg-gray-200"
-              style={{
-                ["--progress-foreground" as any]: "hsl(var(--accent))",
-              }}
+              // style={{
+              //   ["--progress-foreground" as any]: "hsl(var(--accent))",
+              // }}
             />
           </div>
 
@@ -286,9 +286,9 @@ export default function ReviewsCarousel() {
           <Progress
             value={progressValue}
             className="h-2 bg-gray-200"
-            style={{
-              ["--progress-foreground" as any]: "hsl(var(--accent))",
-            }}
+            // style={{
+            //   ["--progress-foreground" as any]: "hsl(var(--accent))",
+            // }}
           />
         </div>
 
