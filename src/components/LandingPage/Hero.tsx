@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[105vh] w-full">
+    <section className="relative h-[105vh] max-h-[44rem] w-full">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image

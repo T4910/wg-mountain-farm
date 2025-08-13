@@ -6,7 +6,7 @@ export default function Journey() {
   return (
     <section className="py-16 px-12 bg-gray-50 overflow-hidden max-w-8xl mx-auto">
       {/* Header */}
-      <div className="mb-4 max-w-xl">
+      <div className="mb-20 lg:mb-4 max-w-xl">
         <div className="title-header">How We Work</div>
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black leading-tighter mb-4">
           Our Journey from Grass to Greatness
@@ -24,7 +24,7 @@ export default function Journey() {
           <SVGline />
         </div>
 
-        <div className="grid grid-cols-6 grid-rows-6 gap-12">
+        <div className="grid grid-cols-6 grid-rows-6 gap-x-6 lg:gap-12">
           <div className="col-span-2 row-span-4 col-start-1 row-start-3">
             <StepCard
               number={1}
@@ -68,7 +68,7 @@ type StepCardProps = {
 
 function StepCard({ number, title, description, icon: Icon }: StepCardProps) {
   return (
-    <div className="relative p-6 overflow- bg-whte">
+    <div className="relative px-0 lg:p-6  bg-whte">
       {/* Floating icon square with green diagonal accent */}
       <div className="absolute -top-3 left-6">
         {/* green diagonal accent behind */}
@@ -79,7 +79,7 @@ function StepCard({ number, title, description, icon: Icon }: StepCardProps) {
       </div>
 
       {/* Big faded step number */}
-      <div className="pointer-events-none select-none absolute left-52 -top-24 text-6xl md:text-[11rem] font-bold text-primary/60">
+      <div className="pointer-events-none select-none absolute left-[calc(100%-6rem)] -top-36 lg:-top-24 text-6xl md:text-[11rem] font-bold text-primary/60">
         {number}
       </div>
 
@@ -88,7 +88,7 @@ function StepCard({ number, title, description, icon: Icon }: StepCardProps) {
         <h3 className="text-lg font-semibold text-gray-900 mb-2 max-w-[20ch]">
           {title}
         </h3>
-        <p className="text-gray-600 text-sm leading-relaxed max-w-[30ch]">
+        <p className="text-gray-600 text-sm leading-relaxed lg:max-w-[30ch]">
           {description}
         </p>
       </div>

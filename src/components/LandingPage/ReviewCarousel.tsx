@@ -2,8 +2,8 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import { ChevronLeftIcon, ChevronRightIcon, QuoteIcon } from "lucide-react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 // Demo reviews (can be sourced from Supabase later)
 const reviews = [
@@ -181,13 +181,13 @@ export default function ReviewsCarousel() {
       {/* Left primary panel */}
       <aside className="bg-primary text-primary-foreground rounded-2xl p-8 lg:w-80 flex flex-col justify-between shadow-[var(--shadow-elegant)]">
         <div>
-          <Quote className="w-12 h-12 opacity-30 mb-4" />
+          <QuoteIcon className="w-12 h-12 opacity-30 mb-4" />
           <h3 className="text-4xl font-semibold leading-tight">
             What people are saying about us
           </h3>
         </div>
 
-        <div className="flex items-center justify-center gap-4 mt-8">
+        <div className="flex items-center justify-center gap-4 mt-8 max-lg:hidden">
           <Button
             variant="secondary"
             size="icon"
@@ -195,10 +195,10 @@ export default function ReviewsCarousel() {
               pauseAndResume();
               slidePrev();
             }}
-            className="rounded-full w-10 h-10 bg-transparent hover:bg-primary-foreground/10"
+            className="rounded-full size-16 bg-transparent text-white hover:bg-primary-foreground/10"
             aria-label="Previous reviews"
           >
-            <ChevronLeft className="w-4 h-4" />
+            <ChevronLeftIcon className="w-4 h-4" />
           </Button>
 
           <div className="flex-1 max-w-24">
@@ -218,10 +218,10 @@ export default function ReviewsCarousel() {
               pauseAndResume();
               slideNext();
             }}
-            className="rounded-full w-10 h-10 bg-transparent hover:bg-primary-foreground/10"
+            className="rounded-full size-16 bg-transparent text-white hover:bg-primary-foreground/10"
             aria-label="Next reviews"
           >
-            <ChevronRight className="w-4 h-4" />
+            <ChevronRightIcon className="w-4 h-4" />
           </Button>
         </div>
       </aside>
@@ -266,6 +266,44 @@ export default function ReviewsCarousel() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="flex items-center justify-center gap-4 lg:hidden">
+        <Button
+          variant="secondary"
+          size="icon"
+          onClick={() => {
+            pauseAndResume();
+            slidePrev();
+          }}
+          className="rounded-full size-16 bg-transparent text-black hover:bg-primary-foreground/10"
+          aria-label="Previous reviews"
+        >
+          <ChevronLeftIcon className="w-4 h-4" />
+        </Button>
+
+        <div className="flex-1 max-w-24">
+          <Progress
+            value={progressValue}
+            className="h-2 bg-gray-200"
+            style={{
+              ["--progress-foreground" as any]: "hsl(var(--accent))",
+            }}
+          />
+        </div>
+
+        <Button
+          variant="secondary"
+          size="icon"
+          onClick={() => {
+            pauseAndResume();
+            slideNext();
+          }}
+          className="rounded-full size-16 bg-transparent text-black hover:bg-primary-foreground/10"
+          aria-label="Next reviews"
+        >
+          <ChevronRightIcon className="w-4 h-4" />
+        </Button>
       </div>
     </div>
   );

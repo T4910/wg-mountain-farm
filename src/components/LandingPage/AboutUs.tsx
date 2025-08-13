@@ -9,7 +9,7 @@ export default function AboutUs() {
   if (a)
     return (
       <section className="flex items-stretch gap-12 max-md:flex-col-reverse px-12 py-28 max-w-8xl mx-auto">
-        <div className="relative md:flex-1 rounded-2xl max-md:h-80 max-md:w-full">
+        <div className="relative md:flex-1 rounded-2xl max-md:h-80 max-md:w-full max-lg:hidden">
           <Image
             src="/cattle-herd.jpg"
             className="h-full w-auto object-cover rounded-2xl"
@@ -17,7 +17,7 @@ export default function AboutUs() {
             fill
           />
         </div>
-        <div className=" w-full md:w-2/3 lg:w-1/2 h-full grid place-content-center">
+        <div className=" w-full md:w-2/3 lg:w-1/2 h-full grid place-content-center max-lg:grow">
           <div className="space-y-4">
             {/* Section Header */}
             <div className="title-header">About Us</div>
@@ -107,11 +107,11 @@ export default function AboutUs() {
 
 const Stats = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:gap-6 mt-12 max-lg:w-fit">
       {/* 2025 - Established */}
       <div className="flex items-start space-x-4">
         <div className="w-1 h-full bg-accent rounded-none"></div>
-        <div className="flex-1">
+        <div className="flex-1 max-lg:pr-8">
           <div className="size-12 bg-[#E4F1FA] grid place-items-center rounded-md mb-3">
             <CalendarIcon className="size-6 text-blue-600" />
           </div>
@@ -123,7 +123,7 @@ const Stats = () => {
       {/* Abuja - Location */}
       <div className="flex items-start space-x-4">
         <div className="w-1 h-full bg-blue-400 rounded-none"></div>
-        <div className="flex-1">
+        <div className="flex-1 max-lg:pr-8">
           <div className="size-12 bg-[#E4F1FA] grid place-items-center rounded-md mb-3">
             <LocationEditIcon className="size-6 text-blue-600" />
           </div>
@@ -135,7 +135,7 @@ const Stats = () => {
       {/* 3 - Livestock Variety */}
       <div className="flex items-start space-x-4">
         <div className="w-1 h-full bg-accent rounded-none"></div>
-        <div className="flex-1">
+        <div className="flex-1 max-lg:pr-8">
           <div className="size-12 bg-[#E4F1FA] grid place-items-center rounded-md mb-3">
             <PawPrintIcon className="size-6 text-blue-600" />
           </div>

@@ -29,7 +29,7 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <div className="row-span-4 col-start-3">
+        <div className="row-span-4 col-start-3 max-lg:col-span-2">
           {" "}
           <div className="relative h-64 md:h-full rounded-2xl overflow-hidden">
             <Image
@@ -40,7 +40,7 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <div className="row-span-4 col-start-4">
+        <div className="row-span-4 col-start-4 max-lg:hidden">
           {" "}
           <div className="relative h-64 md:h-full rounded-2xl overflow-hidden">
             <Image
@@ -62,7 +62,7 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <div className="row-span-4 row-start-6">
+        <div className="row-span-4 row-start-6 max-lg:col-span-2">
           {" "}
           <div className="relative h-64 md:h-full rounded-2xl overflow-hidden">
             <Image
@@ -73,7 +73,7 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <div className="row-span-4 row-start-6">
+        <div className="row-span-4 row-start-6 max-lg:hidden">
           {" "}
           <div className="relative h-64 md:h-full rounded-2xl overflow-hidden">
             <Image

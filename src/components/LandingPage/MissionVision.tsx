@@ -12,13 +12,13 @@ export default function MissionVision() {
       {/* <div className="max-w-7xl mx-auto"> */}
       {/* Header */}
       <span className="title-header">Mission, Vision & Values</span>
-      <div className="flex justify-between mb-16 mt-2">
+      <div className="flex max-lg:flex-col justify-between mb-16 mt-2 max-lg:gap-2">
         <div>
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black leading-tighter">
-            Our Purpose, <br /> Our Promise
+            Our Purpose, <br className="max-lg:hidden" /> Our Promise
           </h2>
         </div>
-        <p className="text-gray-600 max-w-xl self-center">
+        <p className="text-gray-600 max-w-xl lg:self-center">
           Guided by a clear mission, inspired by a bold vision, and grounded in
           values that put our people, animals, and planet first.
         </p>
@@ -27,9 +27,9 @@ export default function MissionVision() {
       {/* Mission & Vision Cards */}
       <div className="grid grid-cols-1 gap-8">
         {/* Our Mission Card */}
-        <div className=" bg-[#E6F4E6] rounded-2xl p-10 shadow-sm border border-[#4E995033] min-h-56">
-          <div className="flex items-start space-x-6">
-            <div className="w-1/2 flex flex-col self-center">
+        <div className=" bg-[#E6F4E6] rounded-2xl p-10 flex justify-center items-center flex-col shadow-sm border border-[#4E995033] min-h-56">
+          <div className="flex max-lg:flex-col max-lg:gap-3 items-start space-x-6">
+            <div className="w-1/2 flex lg:flex-col lg:self-center max-lg:gap-4">
               <div className="size-12 bg-[#4E9950] rounded-md flex items-center justify-center flex-shrink-0">
                 <SproutIcon className="size-6 text-white" />
               </div>
@@ -51,9 +51,9 @@ export default function MissionVision() {
         </div>
 
         {/* Our Vision Card */}
-        <div className=" bg-[#E9F5FA] rounded-2xl p-10 shadow-sm border flex justify-center items-center flex-col border-[#2288A733] min-h-56">
-          <div className="flex items-start justify-center space-x-6">
-            <div className="w-1/2 flex flex-col self-center">
+        <div className=" bg-[#E9F5FA] rounded-2xl p-10 flex justify-center items-center flex-col shadow-sm border border-[#2288A733] min-h-56">
+          <div className="flex max-lg:flex-col max-lg:gap-3 items-start space-x-6">
+            <div className="w-1/2 flex lg:flex-col lg:self-center max-lg:gap-4">
               <div className="size-12 bg-[#2288A7] rounded-md flex items-center justify-center flex-shrink-0">
                 <SproutIcon className="size-6 text-white" />
               </div>
@@ -73,8 +73,8 @@ export default function MissionVision() {
 
         {/* Our Core Values Card */}
         <div className=" bg-[#FFF7E5] overflow-clip rounded-2xl shadow-sm border flex items-start flex-col border-[#F5850B33]">
-          <div className="flex items-start justify-between space-x-6 w-full">
-            <div className="w-1/2 flex flex-col self-center ml-10">
+          <div className="flex max-lg:flex-col  max-lg:gap-3 items-start justify-between space-x-6 w-full">
+            <div className="w-1/2 flex lg:flex-col lg:self-center max-lg:gap-4 p-10 pt-10">
               <div className="size-12 bg-[#F5850B] rounded-md flex items-center justify-center flex-shrink-0">
                 <SproutIcon className="size-6 text-white" />
               </div>
@@ -95,7 +95,7 @@ export default function MissionVision() {
 
 const CoreValues = () => {
   return (
-    <div className="relative h-[30rem] w-[46rem] overflow-clip left-4">
+    <div className="relative h-[30rem] w-[46rem] -left-10 max-lg:-top-8 lg:left-4">
       {/* Core Values Content */}
       <div className="absolute top-16  text-center bg-white flex flex-col items-center justify-center size-80 p-7 rounded-full shadow-[4px_4px_16px_0px_rgba(0,0,0,0.08)] z-40">
         <div className="size-12 bg-[#F5850B] rounded-md flex items-center justify-center flex-shrink-0">
