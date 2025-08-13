@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Impact() {
   return (
-    <section className="py-16 px-12 bg-secondary flex max-md:flex-col justify-between items-center gap-28">
+    <section className="py-16 px-12 bg-secondary flex max-md:flex-col justify-between items-center gap-28 max-w-8xl mx-auto">
       {/* <div className=" mx-auto"> */}
       {/* Header */}
       <div className="mb-12">

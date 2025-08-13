@@ -5,43 +5,43 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="py-28 px-12 bg-white">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <div className="title-header mb-2">What We Offer</div>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black leading-tighter mb-4">
-            Our Services
-          </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
-            Guided by a clear mission, inspired by a bold vision, and grounded
-            in values that put our people, animals, and planet first.
-          </p>
-        </div>
-
-        {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ServiceCard
-            title="Integrated Pasture Management"
-            description="We create and maintain rich grazing lands that keep livestock healthy, improve soil quality, and protect the environment. Our approach blends tradition with modern techniques for lasting results."
-            imageSrc="/cattle-herd.jpg"
-            bg="bg-[#E6F4E6]"
-          />
-          <ServiceCard
-            title="Livestock Grazing & Breeding"
-            description="From cattle to sheep and goats, we raise strong, well-bred animals through responsible grazing and selective breeding—ensuring premium quality across generations."
-            imageSrc="/cattle-herd.jpg"
-            bg="bg-[#FFF7E5]"
-            reverse
-          />
-          <ServiceCard
-            title="Beef, Dairy & Leather Production"
-            description="We process fresh, high‑quality beef, dairy, and leather with care—combining craft and consistency from pasture to marketplace."
-            imageSrc="/cattle-herd.jpg"
-            bg="bg-[#E9F5FA]"
-          />
-        </div>
+    <section className="py-28 px-12 bg-white mx-auto max-w-8xl">
+      {/* <div className="max-w-7xl mx-auto"> */}
+      {/* Header */}
+      <div className="text-center mb-12">
+        <div className="title-header mb-2">What We Offer</div>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black leading-tighter mb-4">
+          Our Services
+        </h2>
+        <p className="text-gray-600 max-w-2xl mx-auto">
+          Guided by a clear mission, inspired by a bold vision, and grounded in
+          values that put our people, animals, and planet first.
+        </p>
       </div>
+
+      {/* Services Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <ServiceCard
+          title="Integrated Pasture Management"
+          description="We create and maintain rich grazing lands that keep livestock healthy, improve soil quality, and protect the environment. Our approach blends tradition with modern techniques for lasting results."
+          imageSrc="/cattle-herd.jpg"
+          bg="bg-[#E6F4E6]"
+        />
+        <ServiceCard
+          title="Livestock Grazing & Breeding"
+          description="From cattle to sheep and goats, we raise strong, well-bred animals through responsible grazing and selective breeding—ensuring premium quality across generations."
+          imageSrc="/cattle-herd.jpg"
+          bg="bg-[#FFF7E5]"
+          reverse
+        />
+        <ServiceCard
+          title="Beef, Dairy & Leather Production"
+          description="We process fresh, high‑quality beef, dairy, and leather with care—combining craft and consistency from pasture to marketplace."
+          imageSrc="/cattle-herd.jpg"
+          bg="bg-[#E9F5FA]"
+        />
+      </div>
+      {/* </div> */}
     </section>
   );
 }

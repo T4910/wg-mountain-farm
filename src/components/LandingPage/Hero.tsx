@@ -22,7 +22,7 @@ export default function Hero() {
       </div>
 
       {/* Navigation Header */}
-      <nav className="relative container z-10 flex items-center justify-between px-12 py-4">
+      <nav className="relative max-w-8xl z-10 flex items-center justify-between px-12 py-4 mx-auto">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="w-10 h-10 bg-white/90 rounded-lg flex items-center justify-center">
@@ -48,8 +48,8 @@ export default function Hero() {
       </nav>
 
       {/* Hero Content */}
-      <div className="relative container z-10 flex flex-col items-start  min-h-[calc(100vh-80px)] px-12 max-w-4xl">
-        <div className="space-y-4">
+      <div className="relative max-w-8xl z-10 flex flex-col items-start  min-h-[calc(100vh-80px)] pt-[calc(100vh*1/12)] mx-auto">
+        <div className="space-y-4 px-12">
           {/* Main Heading */}
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-semibold text-black leading-tighter mt-12">
             Revolutionizing Sustainable

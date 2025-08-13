@@ -15,89 +15,84 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="py-16 px-12 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
-        {/* Header */}
-        <div className="mb-12">
-          <div className="title-header mb-2">Contact Us</div>
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black leading-tighter mb-4">
-            Let{"'"}s Work Together
-          </h2>
-          <p className="text-gray-600 max-w-xl">
-            Have a question, partnership idea, or just want to say hello? We
-            {"'"}d love to hear from you.
-          </p>
-        </div>
+    <section className="py-16 px-12 bg-gray-50 max-w-8xl mx-auto">
+      {/* Header */}
+      <div className="mb-12">
+        <div className="title-header mb-2">Contact Us</div>
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-semibold text-black leading-tighter mb-4">
+          Let{"'"}s Work Together
+        </h2>
+        <p className="text-gray-600 max-w-xl">
+          Have a question, partnership idea, or just want to say hello? We
+          {"'"}d love to hear from you.
+        </p>
+      </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-7 gap-12">
-          {/* Contact Form */}
-          <ContactForm />
+      <div className="grid grid-cols-1 lg:grid-cols-7 gap-12">
+        {/* Contact Form */}
+        <ContactForm />
 
-          {/* Contact Information */}
-          <div className="lg:col-span-3 relative overflow-hidden">
-            <div className="bg-primary rounded-2xl p-8 text-white h-full">
-              <div className="space-y-6">
-                <div className="flex items-center space-x-4">
-                  <div className="size-10 bg-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <LocationEditIcon className="size-4" />
-                  </div>
-                  <div>
-                    <div className="text-lg">Our Location</div>
-                    <div className="text-sm text-white/80">
-                      Flat 37A, Rockvale Manors, Rockvale Estate, Apo, FCT,
-                      Abuja.
-                    </div>
-                  </div>
+        {/* Contact Information */}
+        <div className="lg:col-span-3 relative overflow-hidden">
+          <div className="bg-primary rounded-2xl p-8 text-white h-full">
+            <div className="space-y-6">
+              <div className="flex items-center space-x-4">
+                <div className="size-10 bg-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <LocationEditIcon className="size-4" />
                 </div>
-                <div className="flex items-center space-x-4">
-                  <div className="size-10 bg-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <LocationEditIcon className="size-4" />
-                  </div>
-                  <div>
-                    <div className="text-lg">Email</div>
-                    <div className="text-sm text-white/80">
-                      contact@mountainfarm.com
-                    </div>
-                  </div>
-                </div>
-                <div className="flex items-center space-x-4">
-                  <div className="size-10 bg-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                    <LocationEditIcon className="size-4 bg-primary" />
-                  </div>
-                  <div>
-                    <div className="text-lg">Phone</div>
-                    <div className="text-sm text-white/80">
-                      +234 803 123 4567
-                    </div>
+                <div>
+                  <div className="text-lg">Our Location</div>
+                  <div className="text-sm text-white/80">
+                    Flat 37A, Rockvale Manors, Rockvale Estate, Apo, FCT, Abuja.
                   </div>
                 </div>
               </div>
-
-              <div className="mt-8">
-                <div className="font-medium mb-4">Stay Connected</div>
-                <div className="flex space-x-3">
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                    <span className="text-sm font-medium text-[#3b5998]">
-                      <FacebookIcon className="size-5" />
-                    </span>
-                  </div>
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                    <span className="text-sm font-medium text-[#3b5998]">
-                      <TwitterIcon className="size-5" />
-                    </span>
-                  </div>
-                  <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
-                    <span className="text-sm font-medium text-[#3b5998]">
-                      <InstagramIcon className="size-5" />
-                    </span>
+              <div className="flex items-center space-x-4">
+                <div className="size-10 bg-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <LocationEditIcon className="size-4" />
+                </div>
+                <div>
+                  <div className="text-lg">Email</div>
+                  <div className="text-sm text-white/80">
+                    contact@mountainfarm.com
                   </div>
                 </div>
               </div>
-              {/* Decorative Circles */}
-              <div className="absolute w-full bottom-0">
-                <div className="bg-white/80 absolute -right-20 -bottom-10 p-32 size-32 rounded-full"></div>
-                <div className="bg-white/40 absolute right-0 -bottom-40 z-10 p-32 size-32 rounded-full"></div>
+              <div className="flex items-center space-x-4">
+                <div className="size-10 bg-white rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <LocationEditIcon className="size-4 bg-primary" />
+                </div>
+                <div>
+                  <div className="text-lg">Phone</div>
+                  <div className="text-sm text-white/80">+234 803 123 4567</div>
+                </div>
               </div>
+            </div>
+
+            <div className="mt-8">
+              <div className="font-medium mb-4">Stay Connected</div>
+              <div className="flex space-x-3">
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <span className="text-sm font-medium text-[#3b5998]">
+                    <FacebookIcon className="size-5" />
+                  </span>
+                </div>
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <span className="text-sm font-medium text-[#3b5998]">
+                    <TwitterIcon className="size-5" />
+                  </span>
+                </div>
+                <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                  <span className="text-sm font-medium text-[#3b5998]">
+                    <InstagramIcon className="size-5" />
+                  </span>
+                </div>
+              </div>
+            </div>
+            {/* Decorative Circles */}
+            <div className="absolute w-full bottom-0">
+              <div className="bg-white/80 absolute -right-20 -bottom-10 p-32 size-32 rounded-full"></div>
+              <div className="bg-white/40 absolute right-0 -bottom-40 z-10 p-32 size-32 rounded-full"></div>
             </div>
           </div>
         </div>

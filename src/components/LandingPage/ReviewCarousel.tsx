@@ -20,7 +20,7 @@ const reviews = [
     text: "Before, goat farming was unpredictable for my family. With their grazing program and veterinary support, our livestock has grown steadily, and my children now enjoy better nutrition from the fresh dairy we produce.",
     author: "Michayla Williams",
     title: "Founder at Elevate Media",
-    rating: 5,
+    rating: 3,
     avatar: "/placeholder.svg?height=40&width=40",
   },
   {
@@ -36,7 +36,7 @@ const reviews = [
     text: "The sustainable farming practices have transformed our land. We've seen increased biodiversity and healthier soil, which has led to better crop yields and reduced environmental impact.",
     author: "Sarah Johnson",
     title: "Organic Farm Owner",
-    rating: 5,
+    rating: 4,
     avatar: "/placeholder.svg?height=40&width=40",
   },
   {
@@ -55,7 +55,7 @@ function Stars({ rating }: { rating: number }) {
       {Array.from({ length: 5 }).map((_, i) => (
         <span
           key={i}
-          className={i < rating ? "text-rating" : "text-muted-foreground"}
+          className={i < rating ? "text-yellow-500" : "text-gray-200"}
         >
           ★
         </span>
@@ -231,7 +231,7 @@ export default function ReviewsCarousel() {
         <div
           ref={trackRef}
           className={
-            "flex gap-4 items-stretch " +
+            "flex gap-4 h-full items-stretch " +
             (transitionOn ? " transition-transform duration-500 ease-out" : "")
           }
           style={{ transform: `translateX(${translate}px)` }}
@@ -242,18 +242,18 @@ export default function ReviewsCarousel() {
               data-card
               className="flex-shrink-0 basis-2/5"
             >
-              <Card className="p-6 min-h-80 flex flex-col justify-between animate-fade-in">
+              <Card className="p-6 min-h-80 h-full flex flex-col justify-between animate-fade-in">
                 <p className="text-sm leading-relaxed mb-4 line-clamp-6">
                   “{review.text}”
                 </p>
                 <div className="space-y-4">
                   <Stars rating={review.rating} />
                   <div className="flex items-center gap-3">
-                    <img
+                    {/* <img
                       src={review.avatar}
                       alt={review.author}
                       className="w-10 h-10 rounded-full object-cover"
-                    />
+                    /> */}
                     <div>
                       <p className="font-semibold text-sm">{review.author}</p>
                       <p className="text-xs text-muted-foreground">

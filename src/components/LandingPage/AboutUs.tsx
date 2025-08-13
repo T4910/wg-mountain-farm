@@ -8,7 +8,7 @@ export default function AboutUs() {
 
   if (a)
     return (
-      <section className="flex items-stretch gap-12 max-md:flex-col-reverse px-12  py-28">
+      <section className="flex items-stretch gap-12 max-md:flex-col-reverse px-12 py-28 max-w-8xl mx-auto">
         <div className="relative md:flex-1 rounded-2xl max-md:h-80 max-md:w-full">
           <Image
             src="/cattle-herd.jpg"
