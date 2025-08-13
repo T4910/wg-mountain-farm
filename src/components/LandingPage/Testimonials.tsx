@@ -3,7 +3,7 @@ import ReviewsCarousel from "./ReviewCarousel";
 
 export default function Testimonials() {
   return (
-    <section className="py-16 px-12 bg-white max-w-8xl mx-auto">
+    <section className="px-4 md:px-12 py-16 md:py-28 bg-white max-w-8xl mx-auto">
       {/* <div className="max-w-7xl mx-auto"> */}
       {/* Header */}
       <div className="text-center mb-12">

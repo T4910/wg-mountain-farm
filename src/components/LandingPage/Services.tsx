@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Services() {
   return (
-    <section className="py-28 px-12 bg-white mx-auto max-w-8xl">
+    <section className="px-4 md:px-12 py-16 md:py-28 bg-white mx-auto max-w-8xl">
       {/* <div className="max-w-7xl mx-auto"> */}
       {/* Header */}
       <div className="text-center mb-12">
@@ -20,7 +20,7 @@ export default function Services() {
       </div>
 
       {/* Services Grid */}
-      <div className="grid max-lg:grid-rows-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-rows-3 max-lg:grid-rows-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <ServiceCard
           title="Integrated Pasture Management"
           description="We create and maintain rich grazing lands that keep livestock healthy, improve soil quality, and protect the environment. Our approach blends tradition with modern techniques for lasting results."
@@ -63,9 +63,9 @@ function ServiceCard({
 }: ServiceCardProps) {
   return (
     <div
-      className={`${bg} rounded-2xl p-4 pb-6 flex max-lg:row-span-6 ${
+      className={`${bg} rounded-2xl p-4 pb-6 flex row-span-6 lg:row-span-12 ${
         reverse
-          ? "flex-col-reverse max-lg:row-start-4 max-lg:col-start-2"
+          ? "flex-col md:flex-col-reverse md:row-start-4 md:col-start-2 lg:row-start-auto lg:col-start-auto"
           : "flex-col"
       } items-start shadow-sm hover:shadow-md transition-shadow gap-6`}
     >

@@ -15,7 +15,7 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <section className="py-16 px-12 bg-gray-50 max-w-8xl mx-auto">
+    <section className="px-4 md:px-12 py-16 md:py-28 bg-gray-50 max-w-8xl mx-auto">
       {/* Header */}
       <div className="mb-12">
         <div className="title-header mb-2">Contact Us</div>

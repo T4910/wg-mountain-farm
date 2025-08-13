@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Gallery() {
   return (
-    <section className="py-16 px-12 bg-secondary max-w-8xl mx-auto">
+    <section className="px-4 md:px-12 py-16 md:py-28 bg-secondary max-w-8xl mx-auto">
       {/* Header */}
       <div className="text-center mb-12">
         <div className="title-header">Gallery</div>

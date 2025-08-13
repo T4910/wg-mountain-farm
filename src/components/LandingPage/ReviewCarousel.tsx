@@ -242,7 +242,7 @@ export default function ReviewsCarousel() {
               data-card
               className="flex-shrink-0 basis-2/5"
             >
-              <Card className="p-6 min-h-80 h-full flex flex-col justify-between animate-fade-in">
+              <Card className="p-6 min-h-80 h-full min-w-56 flex flex-col justify-between animate-fade-in">
                 <p className="text-sm leading-relaxed mb-4 line-clamp-6">
                   “{review.text}”
                 </p>

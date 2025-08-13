@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Impact() {
   return (
-    <section className="py-16 px-12 bg-secondary flex max-lg:flex-col justify-between items-center max-w-8xl mx-auto">
+    <section className="px-4 md:px-12 py-16 md:py-28 bg-secondary flex max-lg:flex-col justify-between items-center max-w-8xl mx-auto">
       {/* <div className=" mx-auto"> */}
       {/* Header */}
       <div className="mb-12 lg:min-w-1/2 max-lg:self-start">
@@ -17,7 +17,7 @@ export default function Impact() {
       </div>
 
       {/* Statistics Grid */}
-      <div className="grid grid-cols-4 lg:grid-cols-2 gap-y-8 lg:mx-auto max-lg:self-start lg:pl-6 min-w-full lg:min-w-1/2">
+      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-2 gap-y-8 md:mx-0 lg:mx-auto max-lg:self-start pl-6 md:pl-0 lg:pl-6 w-5/6 md:min-w-full lg:min-w-1/2">
         {/* Stat 1 */}
         <div className="">
           <div className="text-4xl md:text-5xl font-semibold text-green-600 mb-4">
