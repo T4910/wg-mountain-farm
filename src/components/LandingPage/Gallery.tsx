@@ -17,8 +17,8 @@ export default function Gallery() {
       </div>
 
       {/* Gallery Grid */}
-      <div className="grid grid-cols-4 grid-rows-9 gap-4">
-        <div className="col-span-2 row-span-5">
+      <div className="grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-9 gap-4">
+        <div className="md:col-span-2 md:row-span-5">
           {" "}
           <div className="relative h-64 md:min-h-96 md:h-full rounded-2xl overflow-hidden">
             <Image
@@ -29,7 +29,7 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <div className="row-span-4 col-start-3 max-lg:col-span-2">
+        <div className="md:row-span-4 md:col-start-3 max-sm:col-span-1 max-lg:col-span-2">
           {" "}
           <div className="relative h-64 md:h-full rounded-2xl overflow-hidden">
             <Image
@@ -40,7 +40,7 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <div className="row-span-4 col-start-4 max-lg:hidden">
+        <div className="md:row-span-4 md:col-start-4 max-lg:hidden">
           {" "}
           <div className="relative h-64 md:h-full rounded-2xl overflow-hidden">
             <Image
@@ -51,7 +51,7 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <div className="col-span-2 row-span-5 col-start-3 row-start-5">
+        <div className="md:col-span-2 md:row-span-5 md:col-start-3 md:row-start-5">
           {" "}
           <div className="relative h-64 md:h-full rounded-2xl overflow-hidden">
             <Image
@@ -62,7 +62,7 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <div className="row-span-4 row-start-6 max-lg:col-span-2">
+        <div className="md:row-span-4 md:row-start-6 max-sm:col-span-1 max-lg:col-span-2">
           {" "}
           <div className="relative h-64 md:h-full rounded-2xl overflow-hidden">
             <Image
@@ -73,7 +73,7 @@ export default function Gallery() {
             />
           </div>
         </div>
-        <div className="row-span-4 row-start-6 max-lg:hidden">
+        <div className="md:row-span-4 md:row-start-6 max-lg:hidden">
           {" "}
           <div className="relative h-64 md:h-full rounded-2xl overflow-hidden">
             <Image

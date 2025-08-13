@@ -107,9 +107,9 @@ export default function AboutUs() {
 
 const Stats = () => {
   return (
-    <div className="flex flex-wrap gap-y-10 gap-x-2 md:gap-6 mt-12 max-lg:w-fit">
+    <div className="flex flex-wrap gap-y-10 gap-x-2 md:gap-6 mt-12 w-full md:w-3/4 lg:w-auto">
       {/* 2025 - Established */}
-      <div className="flex items-start space-x-4">
+      <div className="flex items-start space-x-4 flex-1">
         <div className="w-1 h-full bg-accent rounded-none"></div>
         <div className="flex-1">
           <div className="size-12 bg-[#E4F1FA] grid place-items-center rounded-md mb-3">
@@ -121,7 +121,7 @@ const Stats = () => {
       </div>
 
       {/* Abuja - Location */}
-      <div className="flex items-start space-x-4">
+      <div className="flex items-start space-x-4 flex-1">
         <div className="w-1 h-full bg-blue-400 rounded-none"></div>
         <div className="flex-1">
           <div className="size-12 bg-[#E4F1FA] grid place-items-center rounded-md mb-3">
@@ -133,7 +133,7 @@ const Stats = () => {
       </div>
 
       {/* 3 - Livestock Variety */}
-      <div className="flex items-start space-x-4">
+      <div className="flex items-start space-x-4 flex-1">
         <div className="w-1 h-full bg-accent rounded-none"></div>
         <div className="flex-1">
           <div className="size-12 bg-[#E4F1FA] grid place-items-center rounded-md mb-3">
