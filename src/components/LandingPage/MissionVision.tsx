@@ -72,7 +72,7 @@ export default function MissionVision() {
         </div>
 
         {/* Our Core Values Card */}
-        <div className=" bg-[#FFF7E5] overflow-clip rounded-2xl shadow-sm border flex items-start flex-col border-[#F5850B33]">
+        {/* <div className=" bg-[#FFF7E5] overflow-clip rounded-2xl shadow-sm border flex items-start flex-col border-[#F5850B33]">
           <div className="flex max-lg:flex-col  max-lg:gap-3 items-start justify-between space-x-6 w-full">
             <div className="w-fit md:w-1/2 flex lg:flex-col lg:self-center gap-2 md:gap-4 p-10 pt-10">
               <div className="size-12 bg-[#F5850B] rounded-md flex items-center justify-center flex-shrink-0">
@@ -82,11 +82,11 @@ export default function MissionVision() {
                 Core Values
               </h3>
             </div>
-            <div className="flex-1">
+            <div className="flex-1 w-full grid place-items-center-safe">
               <CoreValues />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       {/* </div> */}
     </section>
@@ -95,9 +95,9 @@ export default function MissionVision() {
 
 const CoreValues = () => {
   return (
-    <div className="relative h-[30rem] w-[46rem] -left-10 max-lg:-top-8 lg:left-4">
+    <div className="relative h-[47rem] md:h-[30rem] w-[46rem] max-lg:scale-90 max-lg:-top-8 lg:left-4 mx-auto">
       {/* Core Values Content */}
-      <div className="absolute top-16  text-center bg-white flex flex-col items-center justify-center size-80 p-7 rounded-full shadow-[4px_4px_16px_0px_rgba(0,0,0,0.08)] z-40">
+      <div className="absolute top-4 md:top-16 text-center max-md:left-6 bg-white flex flex-col items-center justify-center size-96 md:size-80 p-7 rounded-full shadow-[4px_4px_16px_0px_rgba(0,0,0,0.08)] z-40">
         <div className="size-12 bg-[#F5850B] rounded-md flex items-center justify-center flex-shrink-0">
           <HandshakeIcon className="size-6 text-white" />
         </div>
@@ -107,7 +107,7 @@ const CoreValues = () => {
           growing together and sharing success.
         </p>
       </div>
-      <div className="absolute -bottom-12 left-56 text-center bg-white flex flex-col items-center justify-center size-80 p-7 rounded-full shadow-[4px_4px_16px_0px_rgba(0,0,0,0.08)] z-30">
+      <div className="absolute -bottom-20 md:-bottom-8 left-12 md:left-56 text-center bg-white flex flex-col items-center justify-center size-96 md:size-80 p-7 rounded-full shadow-[4px_4px_16px_0px_rgba(0,0,0,0.08)] x-10 md:z-30">
         <div className="size-12 bg-[#2F4F78] rounded-md flex items-center justify-center flex-shrink-0">
           <ShieldHalfIcon className="size-6 text-white" />
         </div>
@@ -117,7 +117,7 @@ const CoreValues = () => {
           and respect.
         </p>
       </div>
-      <div className="absolute -top-4 left-[26rem] text-center bg-white flex flex-col items-center justify-center size-80 p-7 rounded-full shadow-[4px_4px_16px_0px_rgba(0,0,0,0.08)] z-20">
+      <div className="absolute top-56 md:-top-4  md:left-[26rem] text-center bg-white flex flex-col items-center justify-center size-96 md:size-80 p-7 rounded-full shadow-[4px_4px_16px_0px_rgba(0,0,0,0.08)] z-20">
         <div className="size-12 bg-[#2E7D32] rounded-md flex items-center justify-center flex-shrink-0">
           <Globe2Icon className="size-6 text-white" />
         </div>
