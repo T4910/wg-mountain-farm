@@ -1,9 +1,10 @@
 import { BadgeCheck, LucideIcon, PawPrint, Sprout } from "lucide-react";
+import Image from "next/image";
 import React, { ReactNode } from "react";
 
 export default function Journey() {
   return (
-    <section className="py-16 px-12 bg-gray-50">
+    <section className="py-16 px-12 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-12 max-w-xl">
@@ -19,6 +20,11 @@ export default function Journey() {
 
         {/* Journey Steps */}
         <div className="relative">
+          {/* Floating Green Line */}
+          <div className="absolute -left-48 -top-42">
+            <SVGline />
+          </div>
+
           <div className="grid grid-cols-6 grid-rows-6 gap-12 ml-8">
             <div className="col-span-2 row-span-4 col-start-1 row-start-3">
               <StepCard
@@ -75,7 +81,7 @@ function StepCard({ number, title, description, icon: Icon }: StepCardProps) {
       </div>
 
       {/* Big faded step number */}
-      <div className="pointer-events-none select-none absolute -right-10 -top-20 text-6xl md:text-[11rem] font-bold text-red-200/60">
+      <div className="pointer-events-none select-none absolute -right-2 -top-24 text-6xl md:text-[11rem] font-bold text-primary/60">
         {number}
       </div>
 
@@ -91,3 +97,14 @@ function StepCard({ number, title, description, icon: Icon }: StepCardProps) {
     </div>
   );
 }
+
+const SVGline = () => {
+  return (
+    <Image
+      src="/llline.svg"
+      alt="Decorative line"
+      layout="fill"
+      objectFit="contain"
+    />
+  );
+};
